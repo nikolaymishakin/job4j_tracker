@@ -2,15 +2,23 @@ package ru.job4j.oop;
 
 public class BallStory {
     public static void main(String[] args) {
-        Ball ball = new Ball();
-        Hare hare = new Hare();
+        Ball kolobok = new Ball();
+        Hare zayac = new Hare();
         Wolf wolf = new Wolf();
         Fox fox = new Fox();
-        ball.tryEat(ball);
-        hare.tryEat(ball);
-        ball.tryEat(ball);
-        wolf.tryEat(ball);
-        ball.tryEat(ball);
-        fox.tryEat(ball);
+        kolobok.run(kolobok);
+        kolobok.meeting(zayac);
+        zayac.tryEat(kolobok);
+        kolobok.say(zayac);
+        kolobok.run(zayac);
+        kolobok.meeting(wolf);
+        wolf.tryEat(kolobok);
+        kolobok.say(wolf);
+        kolobok.run(wolf);
+        kolobok.meeting(fox);
+        fox.say(kolobok);
+        kolobok.say(fox);
+        fox.tryEat(kolobok);
+        fox.finish(kolobok);
     }
 }
