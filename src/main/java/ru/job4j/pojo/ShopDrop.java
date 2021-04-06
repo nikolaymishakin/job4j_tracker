@@ -24,7 +24,7 @@ public class ShopDrop {
     }
         public static Product[] leftShift(Product[] products, int index) {
         for (int i = index; i < products.length; i++) {
-            products[products.length - 1 - i] = products[i];
+            products[products.length - 1 ] = products[i];
         }
             return products;
         }
