@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class ShopTest {
     @Test
-    public void whenLastNull1() {
+    public void whenLastNull() {
         Product[] products = new Product[5];
         products[0] = new Product("Milk", 10);
         products[1] = new Product("Bread", 4);
