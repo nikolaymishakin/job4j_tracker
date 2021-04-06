@@ -2,6 +2,7 @@ package ru.job4j.pojo;
 
 public class ShopDrop {
     public static void main(String[] args) {
+
         Product[] products = new Product[3];
         products[0] = new Product("Milk", 10);
         products[1] = new Product("Bread", 4);
@@ -20,11 +21,11 @@ public class ShopDrop {
                 System.out.println("null");
             }
         }
-//        public static Product[] leftShift(Product[] products, int index){
-//            for (int i = index; i < products.length; i++) {
-//                i = i + 1;
-//            }
-//            return products;
-//        }
     }
+        public static Product[] leftShift(Product[] products, int index) {
+        for (int i = index; i < products.length; i++) {
+            products[products.length - 1 - i] = products[i];
+        }
+            return products;
+        }
 }
