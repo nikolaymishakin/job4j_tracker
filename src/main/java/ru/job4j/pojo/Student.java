@@ -1,33 +1,16 @@
 package ru.job4j.pojo;
 
 public class Student {
-    private String firstname;
-    private String lastname;
-    private String secondname;
+    private String name;
     private int group;
+    private String date;
 
-    public String getFirstname() {
-        return firstname;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public String getSecondname() {
-        return secondname;
-    }
-
-    public void setSecondname(String secondname) {
-        this.secondname = secondname;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getGroup() {
@@ -38,13 +21,12 @@ public class Student {
         this.group = group;
     }
 
-    public String getData() {
-        return data;
+    public String getDate() {
+        return date;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setDate(String date) {
+        this.date = date;
     }
-
-    private String data;
 }
+
