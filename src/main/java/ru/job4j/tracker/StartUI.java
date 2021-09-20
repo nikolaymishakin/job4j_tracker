@@ -9,6 +9,6 @@ public class StartUI {
         System.out.println(currentDateTimeFormat);
         Tracker tracker = new Tracker();
         tracker.add(item);
-        System.out.println(tracker.findById(item.getId()));
+        System.out.println(item.toString());
     }
 }
