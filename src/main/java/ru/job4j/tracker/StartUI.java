@@ -1,13 +1,12 @@
 package ru.job4j.tracker;
 
 public class StartUI {
-
     public void init(Input input, Tracker tracker) {
         boolean run = true;
         while (run) {
             showMenu();
             System.out.print("Select: ");
-            int select = Integer.parseInt(input.askStr("msg"));
+            int select = input.askInt("Select: ");
             if (select == 0) {
                 System.out.println("=== Create a new Item ====");
                 System.out.print("Enter name: ");
@@ -28,7 +27,7 @@ public class StartUI {
             } else if (select == 2) {
                 System.out.println("=== Edit item ====");
                 System.out.print("Enter id: ");
-                int id = Integer.parseInt(input.askStr("msg"));
+                int id = input.askInt("msg");
                 System.out.print("Enter name: ");
                 String name = input.askStr("msg");
                 Item item = new Item(name);
@@ -40,7 +39,7 @@ public class StartUI {
             } else if (select == 3) {
                 System.out.println("=== Delete item ====");
                 System.out.print("Enter id: ");
-                int id = Integer.parseInt(input.askStr("msg"));
+                int id = input.askInt("msg");
                 if (tracker.delete(id)) {
                     System.out.println("Заявка удалена успешно.");
                 } else {
@@ -49,7 +48,7 @@ public class StartUI {
             } else if (select == 4) {
                 System.out.println("=== Find item by id ====");
                 System.out.print("Enter id: ");
-                int id = Integer.parseInt(input.askStr("msg"));
+                int id = input.askInt("msg");
                 Item item = tracker.findById(id);
                 if (item != null) {
                     System.out.println(item);
