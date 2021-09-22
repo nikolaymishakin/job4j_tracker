@@ -9,9 +9,17 @@ public class Matches {
         boolean turn = true;
         int count = 11;
         while (count > 0) {
-            String player = turn ? "Первый игрок" : "Второй игрок";
-            System.out.println(player + " введите число от 1 до 3:");
-            int matches = Integer.parseInt(input.nextLine());
+            int matches;
+            do {
+                String player = turn ? "Первый игрок" : "Второй игрок";
+                System.out.println(player + " введите число от 1 до 3:");
+                matches = Integer.parseInt(input.nextLine());
+                if (matches <1 || matches > 3) System.out.println("Число должно быть в диапазоне от 1 до 3 ");
+                while (matches > count) {
+                    System.out.println("Нет на столе столько спичек");
+                    matches = Integer.parseInt(input.nextLine());
+                }
+            } while ((matches < 1 || matches > 3) && matches <= count);
             turn = !turn;
             count -= matches;
         }
