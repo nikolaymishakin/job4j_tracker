@@ -6,16 +6,6 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.junit.Assert.assertThat;
 
 public class StartUITest {
-    @Test
-    public void whenAddItem() {
-        String[] answers = {"Fix PC"};
-        Input input = new StubInput(answers);
-        Tracker tracker = new Tracker();
-        StartUI.createItem(input, tracker);
-        Item created = tracker.findAll()[0];
-        Item expected = new Item("Fix PC");
-        assertThat(created.getName(), is(expected.getName()));
-    }
 
     @Test
     public void whenCreateItem() {
@@ -160,7 +150,7 @@ public class StartUITest {
                 + System.lineSeparator()
                 + "=== Find items by name ==="
                 + System.lineSeparator()
-                + item.toString()
+                + item
                 + System.lineSeparator()
                 + "Menu." + System.lineSeparator()
                 + "0. === Find items by name ==="
