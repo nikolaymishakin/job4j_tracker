@@ -14,7 +14,9 @@ public class Matches {
                 String player = turn ? "Первый игрок" : "Второй игрок";
                 System.out.println(player + " введите число от 1 до 3:");
                 matches = Integer.parseInt(input.nextLine());
-                if (matches <1 || matches > 3) System.out.println("Число должно быть в диапазоне от 1 до 3 ");
+                if (matches < 1 || matches > 3) {
+                    System.out.println("Число должно быть в диапазоне от 1 до 3 ");
+                }
                 while (matches > count) {
                     System.out.println("Нет на столе столько спичек");
                     matches = Integer.parseInt(input.nextLine());

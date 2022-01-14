@@ -3,7 +3,8 @@ package ru.job4j.oop;
 public class Surgeon extends Doctor {
     private String analysis;
 
-    public Surgeon(String name, String surname, String education, String birthday, String analysis) {
+    public Surgeon(String name, String surname, String education,
+                   String birthday, String analysis) {
         super(name, surname, education, birthday);
         this.analysis = analysis;
     }

@@ -9,7 +9,7 @@ public class Bus implements Transport, Vehicle {
 
     @Override
     public void passengers(int count) {
-        System.out.println("Принято на борт " + count + " пассажиров" );
+        System.out.println("Принято на борт " + count + " пассажиров");
     }
 
     @Override

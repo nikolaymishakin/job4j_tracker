@@ -6,6 +6,7 @@ public class College {
         student.setName("Мишакин Николай Викторович");
         student.setGroup(1);
         student.setDate("06.04.2021");
-        System.out.println(student.getName() + " " + ", группа № " + student.getGroup() + ", " + student.getDate());
+        System.out.println(student.getName() + " " + ", группа № " + student.getGroup()
+                + ", " + student.getDate());
     }
 }
