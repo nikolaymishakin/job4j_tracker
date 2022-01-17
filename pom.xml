@@ -5,11 +5,11 @@
     <packaging>jar</packaging>
     <version>2.0</version>
     <name>tracker</name>
-    <url>http://job4j.ru/</url>
+    <url>http://job4j.ru/</url>mvn
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
