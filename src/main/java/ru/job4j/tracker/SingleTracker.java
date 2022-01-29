@@ -4,7 +4,7 @@ public final class SingleTracker {
     private static SingleTracker checkCopy = null;
     private Tracker tracker = new Tracker();
 
-    public SingleTracker() {
+    private SingleTracker() {
     }
 
     public static SingleTracker getCheckCopy() {
