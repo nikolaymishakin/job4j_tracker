@@ -13,6 +13,7 @@ public final class SingleTracker {
         }
         return checkCopy;
     }
+
     public Item add(Item item) {
         return tracker.add(item);
     }
