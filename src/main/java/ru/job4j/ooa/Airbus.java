@@ -14,7 +14,6 @@ public final class Airbus extends Aircraft {
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
