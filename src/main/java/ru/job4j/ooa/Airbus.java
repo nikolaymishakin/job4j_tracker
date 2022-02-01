@@ -5,6 +5,7 @@ public final class Airbus extends Aircraft {
 
     private String name;
 
+
     public Airbus(String name) {
         this.name = name;
     }
