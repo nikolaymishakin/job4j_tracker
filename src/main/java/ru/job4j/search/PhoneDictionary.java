@@ -11,20 +11,18 @@ public class PhoneDictionary {
 
     public ArrayList<Person> find(String key) {
         ArrayList<Person> result = new ArrayList<>();
-
-        result.add(new Person("Petr", "Arsentev", "741852", "Bryansk"));
-        result.add(new Person("Nikolay", "Mishakin", "456231", "Moskva"));
-        result.add(new Person("Elena", "Lomova", "456289", "Nerungri"));
-
-        for (Person value: result) {
-            if (value.equals(key.contains("Elena"))) {
-                return result;
+        for (Person persons : persons) {
+            if (persons.getName().contains(key)) {
+                result.add(persons);
             }
-            if (key.contains("456231")) {
-                return this.persons;
+            if (persons.getSurname().contains(key)) {
+                result.add(persons);
             }
-            if (key.contains("Lomova")) {
-                return this.persons;
+            if (persons.getAddress().contains(key)) {
+                result.add(persons);
+            }
+            if (persons.getPhone().contains(key)) {
+                result.add(persons);
             }
         }
         return result;

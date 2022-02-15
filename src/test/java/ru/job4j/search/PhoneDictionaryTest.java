@@ -21,7 +21,7 @@ public class PhoneDictionaryTest {
         ArrayList<Person> persons = phones.find("Petr");
         ArrayList<Person> persons1 = phones.find("Nikolay");
         assertThat(persons.get(0).getSurname(), is("Arsentev"));
-        assertThat(persons1.get(1).getSurname(), is("Mishakin"));
+        assertThat(persons1.get(0).getSurname(), is("Mishakin"));
     }
 
 }
